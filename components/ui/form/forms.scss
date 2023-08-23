@@ -1,0 +1,18 @@
+.form {
+  @apply space-y-3;
+  &__title {
+    @apply text-center text-3xl font-bold text-gray-600 mb-4;
+  }
+  &__label {
+    @apply text-sm font-medium pb-2 text-gray-600;
+  }
+  &__input {
+    @apply outline-none w-full mt-1 text-gray-500 border-2 rounded-md px-4 py-1.5 duration-200 focus:border-blue-600;
+  }
+  &__error {
+    @apply text-red-500 py-1 text-sm;
+  }
+  &__break-line {
+    @apply text-center my-4 text-gray-400 font-semibold relative before:content-[""] before:block before:w-[158px] before:h-[3px] before:rounded-md before:absolute before:left-0 before:top-1/2 after:content-[""] after:block after:w-[158px] after:h-[3px] after:absolute after:right-0 after:top-1/2 after:rounded-md before:bg-gray-200 after:bg-gray-200;
+  }
+}
